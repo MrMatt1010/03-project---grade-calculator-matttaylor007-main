@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start; /* Align elements at the top */
+  align-items: center;
+  min-height: 100vh;
+  background-color: steelblue;
+  background: linear-gradient(to bottom, steelblue, #215d98);
+}
+
+.app {
+  max-width: 800px;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-top: 2rem; /* Add margin at the top */
+}
+
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem; /* Increased gap for more spacing */
+  padding: 3rem; /* Increased padding for a larger form */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Add a semi-transparent background */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align elements at the top */
+    align-items: center;
+    min-height: auto;
+    background: linear-gradient(to bottom, steelblue, #215d98);
+  }
+}
